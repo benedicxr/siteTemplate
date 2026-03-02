@@ -885,6 +885,11 @@ body {
     padding: 20px 40px;
     border-radius: 10px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+    transition: transform 0.3s ease;
+}
+
+.faq__item:hover {
+    transform: translateY(-5%);
 }
 
 .faq__item-header {
