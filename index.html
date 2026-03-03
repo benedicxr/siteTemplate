@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="html-light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>A Digital agency | landing page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="scripts/script.js" defer></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
@@ -13,8 +14,15 @@
     <header class="header">
         <div class="header__container container">
             <div class="header__logo">
-                <img class="header__logo-icon" src="resources/logo.svg" alt="Company Logo">
+                <img class="header__logo-icon" src="resources/logo.svg" alt="Company Logo" height="28" width="135">
             </div>
+            <div class="burger__menu">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+            </div>
+            <button class="dark-mode-toggle">Toggle Dark Mode</button>
+
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
@@ -459,63 +467,63 @@
             </div>
             <div class="wave wave--darkblue"><img src="resources/wave-darkblue.svg" alt="wave" class="wave__img"></div>
         </section>
-        <footer class="footer">
-            <div class="footer__cta">
-                <div class="footer__cta-container container">
-                    <h2 class="footer__cta-title">Join our community by using our services and grow your business.</h2>
-                    <button class="btn btn--primary footer__cta-btn">Try It For Free</button>
-                </div>
-            </div>
-            <hr class="footer__divider">
-            <div class="footer__main">
-                <div class="footer__main-container container">
-                    <div class="footer__column footer__column--branding">
-                        <h3 class="footer__logo">Sandbox</h3>
-                        <p class="footer__copyright">© 2023 Sandbox. <br> All rights reserved.</p>
-                        <div class="footer__socials">
-                            <a href="#" class="footer__social-link"><img src="resources/tw-w.svg" alt="Twitter"></a>
-                            <a href="#" class="footer__social-link"><img src="resources/fb-w.svg" alt="Facebook"></a>
-                            <a href="#" class="footer__social-link"><img src="resources/db-w.svg" alt="Dribbble"></a>
-                            <a href="#" class="footer__social-link"><img src="resources/inst-w.svg" alt="Instagram"></a>
-                            <a href="#" class="footer__social-link"><img src="resources/yt-w.svg" alt="YouTube"></a>
-                        </div>
-                    </div>
-
-                    <div class="footer__column">
-                        <h4 class="footer__column-title">Get in Touch</h4>
-                        <address class="footer__address">
-                            Moonshine St. 14/05 <br>
-                            Light City, London, <br>
-                            United Kingdom
-                        </address>
-                        <p class="footer__contact-info">
-                            <a href="mailto:info@email.com" class="email__link">info@email.com</a> <br>
-                            00 (123) 456 78 90
-                        </p>
-                    </div>
-
-                    <div class="footer__column">
-                        <h4 class="footer__column-title">Learn More</h4>
-                        <ul class="footer__list">
-                            <li><a href="#" class="footer__link">About Us</a></li>
-                            <li><a href="#" class="footer__link">Our Story</a></li>
-                            <li><a href="#" class="footer__link">Projects</a></li>
-                            <li><a href="#" class="footer__link">Terms of Use</a></li>
-                            <li><a href="#" class="footer__link">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer__column">
-                        <h4 class="footer__column-title">Our Newsletter</h4>
-                        <p class="footer__newsletter-text">Subscribe to our newsletter to get our news & deals delivered to you.</p>
-                        <form class="footer__newsletter-form">
-                            <input type="email" placeholder="Email Address" class="footer__input">
-                            <button type="submit" class="btn btn--primary footer__btn">Join</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </footer>
     </main>
+    <footer class="footer">
+        <div class="footer__cta">
+            <div class="footer__cta-container container">
+                <h2 class="footer__cta-title">Join our community by using our services and grow your business.</h2>
+                <button class="btn btn--primary footer__cta-btn">Try It For Free</button>
+            </div>
+        </div>
+        <hr class="footer__divider">
+        <div class="footer__main">
+            <div class="footer__main-container container">
+                <div class="footer__column footer__column--branding">
+                    <h3 class="footer__logo">Sandbox</h3>
+                    <p class="footer__copyright">© 2023 Sandbox. <br> All rights reserved.</p>
+                    <div class="footer__socials">
+                        <a href="#" class="footer__social-link"><img src="resources/tw-w.svg" alt="Twitter"></a>
+                        <a href="#" class="footer__social-link"><img src="resources/fb-w.svg" alt="Facebook"></a>
+                        <a href="#" class="footer__social-link"><img src="resources/db-w.svg" alt="Dribbble"></a>
+                        <a href="#" class="footer__social-link"><img src="resources/inst-w.svg" alt="Instagram"></a>
+                        <a href="#" class="footer__social-link"><img src="resources/yt-w.svg" alt="YouTube"></a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Get in Touch</h4>
+                    <address class="footer__address">
+                        Moonshine St. 14/05 <br>
+                        Light City, London, <br>
+                        United Kingdom
+                    </address>
+                    <p class="footer__contact-info">
+                        <a href="mailto:info@email.com" class="email__link">info@email.com</a> <br>
+                        00 (123) 456 78 90
+                    </p>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Learn More</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">About Us</a></li>
+                        <li><a href="#" class="footer__link">Our Story</a></li>
+                        <li><a href="#" class="footer__link">Projects</a></li>
+                        <li><a href="#" class="footer__link">Terms of Use</a></li>
+                        <li><a href="#" class="footer__link">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Our Newsletter</h4>
+                    <p class="footer__newsletter-text">Subscribe to our newsletter to get our news & deals delivered to you.</p>
+                    <form class="footer__newsletter-form">
+                        <input type="email" placeholder="Email Address" class="footer__input">
+                        <button type="submit" class="btn btn--primary footer__btn">Join</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
