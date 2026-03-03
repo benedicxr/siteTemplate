@@ -343,7 +343,7 @@ body {
     color: var(--color-text-light);
     line-height: 1.6;
     margin-bottom: 25px;
-    font-size: 17px;
+    font-size: var(--font-size-base);
 }
 
 .strategy__steps {
@@ -522,7 +522,7 @@ body {
 
 .team__description {
     color: var(--color-text-light);
-    font-size: 18px;
+    font-size: -var(--font-size-base);
     line-height: 1.6;
 }
 
@@ -550,14 +550,14 @@ body {
 }
 
 .stat-item__number {
-    font-size: 30px;
+    font-size: var(--font-size-xl);
     font-weight: 700;
     color: var(--color-text-dark);
     display: block;
 }
 
 .stat-item__label {
-    font-size: 15px;
+    font-size: var(--font-size-sm);
     color: var(--color-text-light);
 }
 
@@ -687,11 +687,11 @@ body {
 }
 
 .projects__image-wrapper {
-    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
-    aspect-ratio: 4 / 3;
+    height: 410px;
 }
 
 .projects__img {
@@ -702,14 +702,14 @@ body {
 }
 
 .projects__card-title {
-    font-size: 20px;
+    font-size: var(--font-size-lg);
     color: var(--color-text-dark);
     font-weight: var(--font-weight-semi-bold);
     margin-bottom: 8px;
 }
 
 .projects__category {
-    font-size: 13px;
+    font-size: var(--font-size-sm);
     text-transform: uppercase;
     color: #aab0bc;
     letter-spacing: 0.5px;
@@ -755,7 +755,7 @@ body {
     font-weight: var(--font-weight-semi-bold);
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: var(--font-size-base);
     margin-bottom: 15px;
 }
 
@@ -779,7 +779,6 @@ body {
 }
 
 .reviews__card {
-    break-inside: avoid; 
     display: inline-flex;
     flex-direction: column;
     width: 100%;
@@ -796,7 +795,7 @@ body {
 }
 
 .reviews__quote-icon {
-    font-size: 40px;
+    font-size: var(--font-size-2xl);
     color: var(--color-orange-quote);
     line-height: 1;
     margin-bottom: 10px;
@@ -806,7 +805,7 @@ body {
 .reviews__text {
     color: var(--color-text-light);
     line-height: 1.7;
-    font-size: 17px;
+    font-size: var(--font-size-base);
     margin-bottom: 30px;
     flex-grow: 1;
 }
@@ -825,8 +824,7 @@ body {
 }
 
 .reviews__user-name {
-    font-size: 17px;
-    color: var(--color-text-dark);
+    font-size: var(--font-size-base);    color: var(--color-text-dark);
     font-weight: var(--font-weight-semi-bold);
     margin-bottom: 2px;
 }
@@ -953,13 +951,13 @@ body {
 }
 
 .footer__logo {
-    font-size: 28px;
+    font-size: var(--font-size-lg);
     margin-bottom: 20px;
 }
 
 .footer__copyright {
     color: var(--color-text-footer);
-    font-size: 15px;
+    font-size: var(--font-size-base);
     line-height: 1.6;
     margin-bottom: 25px;
 }
@@ -969,7 +967,7 @@ body {
 }
 
 .footer__column-title {
-    font-size: 18px;
+    font-size: var(--font-size-lg);
     margin-bottom: 25px;
     font-weight: var(--font-weight-semi-bold);
 }
@@ -980,7 +978,7 @@ body {
 .footer__newsletter-text,
 .email__link {
     color: var(--color-text-footer);
-    font-size: 16px;
+    font-size: var(--font-size-base);
     line-height: 1.8;
     font-style: normal;
 }
