@@ -35,6 +35,9 @@ const applyTheme = (theme) => {
     localStorage.setItem('theme', theme);
 };
 
+const savedTheme = localStorage.getItem('theme') || 'html-light';
+applyTheme(savedTheme);
+
 toggleDarkMode?.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'html-light' ? 'html-dark' : 'html-light';
@@ -114,6 +117,9 @@ window.addEventListener('scroll', () => {
 backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+
+
 
 const modal = document.querySelector('#contactModal');
 const openBtn = document.querySelector('#openModal');
