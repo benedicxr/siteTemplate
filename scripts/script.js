@@ -28,7 +28,7 @@ navLinks.forEach(link => {
 
 
 
-const toggleDarkMode = document.querySelector('.dark-mode-toggle');
+const toggleDarkMode = document.querySelector('#theme-toggle');
 
 const applyTheme = (theme) => {
     document.documentElement.setAttribute('data-theme', theme);
