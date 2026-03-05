@@ -51,7 +51,7 @@
                         <span class="header__arrow"></span>
                     </li>
                 </ul>
-                <button class="btn btn--primary header__cta">Contact</button>
+                <button class="btn btn--primary header__cta" id="openModal">Contact</button>
             </nav>
         </div>
     </header>
@@ -564,5 +564,18 @@
             </div>
         </div>
     </footer>
+    <div class="modal" id="contactModal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="modal__title">Get in Touch</h2>
+            <form class=modal__form">
+            <input type="text" placeholder="Your Name" class="modal__input">
+            <input type="email" placeholder="Your Email" class="modal__input">
+            <textarea placeholder="Message"" class="modal__input"></textarea>
+            <button type="submit" class="modal__submit">Send Message</button>
+        </form>
+        </div>
+    </div>
 </body>
 </html>

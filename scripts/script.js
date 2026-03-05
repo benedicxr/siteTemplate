@@ -114,3 +114,19 @@ window.addEventListener('scroll', () => {
 backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+const modal = document.querySelector('#contactModal');
+const openBtn = document.querySelector('#openModal');
+const closeBtn = document.querySelector('.modal__close');
+const overlay = document.querySelector('.modal__overlay');
+const toggleModal = () => modal.classList.toggle('modal--active');
+
+openBtn?.addEventListener('click', toggleModal);
+
+[closeBtn, overlay].forEach(el => el?.addEventListener('click', toggleModal));
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('modal--active')) {
+        toggleModal();
+    }
+});
