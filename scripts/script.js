@@ -94,12 +94,18 @@ const scrollNext = () => {
 
 let autoScroll = setInterval(scrollNext, 5000);
 
+const resetAutoScroll = () => {
+    clearInterval(autoScroll);
+    autoScroll = setInterval(scrollNext, 5000);
+}
 nextBtn?.addEventListener('click', () => {
     scrollNext();
+    resetAutoScroll();
 });
 
 prevBtn?.addEventListener('click', () => {
     slider.scrollBy({left: -getScrollStep(), behavior: 'smooth'});
+    resetAutoScroll();
 });
 
 
