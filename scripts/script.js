@@ -79,16 +79,23 @@ function initProjectSlider() {
         slider.scrollLeft >= max - 10 ? slider.scrollTo({left: 0, behavior: 'smooth'}) : slider.scrollBy({left: getStep(), behavior: 'smooth'});
     };
 
-    setInterval(scrollNext, 5000);
-    nextBtn?.addEventListener('click', scrollNext);
-    prevBtn?.addEventListener('click', () => slider.scrollBy({left: -getStep(), behavior: 'smooth'}));
-}
+let autoScroll = setInterval(scrollNext, 5000);
 
-function initBackToTop() {
-    const btn = document.createElement('button');
-    btn.className = 'back-to-top';
-    btn.innerHTML = '↑';
-    document.body.appendChild(btn);
+nextBtn?.addEventListener('click', () => {
+    scrollNext();
+});
+
+prevBtn?.addEventListener('click', () => {
+    slider.scrollBy({left: -getScrollStep(), behavior: 'smooth'});
+});
+
+
+
+
+const backToTop = document.createElement('button');
+backToTop.classList.add('back-to-top');
+backToTop.innerHTML = '↑';
+document.body.appendChild(backToTop);
 
     window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 300));
     btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
