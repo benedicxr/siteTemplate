@@ -17,11 +17,11 @@
             <div class="header__logo">
                 <img class="header__logo-icon" src="resources/logo.svg" alt="Company Logo" height="28" width="135">
             </div>
-            <div class="burger__menu">
+            <button class="burger__menu">
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
                 <span class="burger__line"></span>
-            </div>
+            </button>
             <button id="theme-toggle" class="theme-btn">
                 <img src="resources/sun.svg" alt="sun" class="theme-icon theme-icon--sun">
                 <img src="resources/moon.svg" alt="moon" class="theme-icon theme-icon--moon">
@@ -180,7 +180,7 @@
 
                     <div class="solutions__accordion">
                         <div class="accordion__item accordion__item--active">
-                            <div class="accordion__header">
+                            <div class="accordion__header js-accordion">
                                 <span class="accordion__arrow"></span>
                                 <h3 class="accordion__item-title">Professional Design</h3>
                             </div>
@@ -192,7 +192,7 @@
                         </div>
 
                         <div class="accordion__item">
-                            <div class="accordion__header">
+                            <div class="accordion__header js-accordion">
                                 <span class="accordion__arrow"></span>
                                 <h3 class="accordion__item-title">Top-Notch Support</h3>
                             </div>
@@ -204,7 +204,7 @@
                         </div>
 
                         <div class="accordion__item">
-                            <div class="accordion__header">
+                            <div class="accordion__header js-accordion">
                                 <span class="accordion__arrow"></span>
                                 <h3 class="accordion__item-title">Header and Slider Options</h3>
                             </div>
@@ -451,7 +451,7 @@
 
                 <div class="faq__accordion">
                     <div class="faq__item">
-                        <div class="faq__item-header">
+                        <div class="faq__item-header js-accordion">
                             <span class="faq__item-arrow"></span>
                             <h3 class="faq__item-title">How do I get my subscription receipt?</h3>
                         </div>
@@ -465,7 +465,7 @@
                     </div>
 
                     <div class="faq__item">
-                        <div class="faq__item-header">
+                        <div class="faq__item-header js-accordion">
                             <span class="faq__item-arrow"></span>
                             <h3 class="faq__item-title">Are there any discounts for people in need?</h3>
                         </div>
@@ -479,7 +479,7 @@
                     </div>
 
                     <div class="faq__item">
-                        <div class="faq__item-header">
+                        <div class="faq__item-header js-accordion">
                             <span class="faq__item-arrow"></span>
                             <h3 class="faq__item-title">Do you offer a free trial edit?</h3>
                         </div>
@@ -493,7 +493,7 @@
                     </div>
 
                     <div class="faq__item">
-                        <div class="faq__item-header">
+                        <div class="faq__item-header js-accordion">
                             <span class="faq__item-arrow"></span>
                             <h3 class="faq__item-title">How do I reset my Account password?</h3>
                         </div>
@@ -572,12 +572,12 @@
         <div class="modal__content">
             <button class="modal__close">&times;</button>
             <h2 class="modal__title">Get in Touch</h2>
-            <form class=modal__form">
-            <input type="text" placeholder="Your Name" class="modal__input">
-            <input type="email" placeholder="Your Email" class="modal__input">
-            <textarea placeholder="Message"" class="modal__input"></textarea>
-            <button type="submit" class="modal__submit">Send Message</button>
-        </form>
+            <form class="modal__form">
+                <input type="text" name="name" placeholder="Your Name" class="modal__input" required>
+                <input type="email" name="email" placeholder="Your Email" class="modal__input" required>
+                <textarea name="message" placeholder="Message" class="modal__input" required></textarea>
+                <button type="submit" class="modal__submit">Send Message</button>
+            </form>
         </div>
     </div>
 </body>
